@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="#F1F1F1"
     android:layout_height="match_parent"
     tools:context=".MenuActivity">
     
@@ -14,8 +15,10 @@
         android:orientation="horizontal">
 
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="180dp"
-            android:layout_height="180dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:clickable="true"
             app:cardCornerRadius="1dp">
             
@@ -23,26 +26,51 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-
+                
                 <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/pizzaa">
-                </ImageView>
+                    android:layout_width="match_parent"
+                    android:layout_height="194dp"
+                    android:src="@drawable/pizza"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Imagem de pizza vegana"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pizzaria Veg"
+                        android:textStyle="bold"
+                        android:textColor="#263C27"
+                        android:layout_marginTop="8dp"/>
 
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_gravity="center"
-                    android:text="Pizzaria Veg"
-                    android:textAllCaps="true"
-                    android:textColor="#314E32"
-                    android:textSize="20sp"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#333131"
+                        android:text="Venha comer as melhores pizzas veganas da região! Mais de 30 sabores"
+
+                </LinearLayout>
+
+
+
 
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
+
+
+
+
+
+
+
     </LinearLayout>
+
 
 </LinearLayout>
